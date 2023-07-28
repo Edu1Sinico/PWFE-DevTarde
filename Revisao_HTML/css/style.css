@@ -2,7 +2,7 @@ body {
     margin: 0px;
 }
 
-.cabecalho {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -22,7 +22,8 @@ a {
 
 .menuHB{
     top: 10vh;
-    transform: translateY(-100%);
+    position: relative;
+    transform: translateY(-170%);
     transition: .3s all ease-in-out;
     z-index: -1;
 }
@@ -41,22 +42,22 @@ ul li{
     padding: 5%;
 }
 
-.part1 {
+.Card-part1 {
     margin-left: 5%;
     height: 5vh;
 }
 
-.part2 {
+.Card-part2 {
     margin-right: 5%;
     height: 5vh;
 }
 
-.part2 .botaoHB .imgHB img{
+.Card-part2 .btn-HB .imgHB img{
     width: 46.5px;
     margin-left: 35px;
 }
 
-.part2 .botaoHB{
+.Card-part2 .btn-HB{
     display: none; 
 }
 
@@ -65,15 +66,15 @@ ul li{
 
 
 @media screen and (max-width: 768px) {
-    .cabecalho {
+    .header {
         padding: 5px;
     }
 
-    .part1 .menu{
+    .Card-part1 .menu{
         display: none;
     }
 
-    .part2 .botaoHB{
+    .Card-part2 .btn-HB{
         display: inline;
     }
 
@@ -82,7 +83,7 @@ ul li{
     }
 
     .imgHB:hover ~ .menuHB, .menuHB:hover{
-        transform: translateY(0%);
+        transform: translateY(-70%);
         transition: .3s all ease-in-out;
     }
 }
